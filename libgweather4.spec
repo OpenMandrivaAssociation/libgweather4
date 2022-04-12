@@ -73,11 +73,11 @@ This package contains the development files for %{name}.
 
 %install
 %meson_install
-%find_lang %{name}-%{gimajor}
-%find_lang %{name}-locations
-cat %{name}-locations.lang >> %{name}-%{gimajor}.lang
+%find_lang %{oname}-%{gimajor}
+%find_lang %{oname}-locations
+cat %{name}-locations.lang >> %{oname}-%{gimajor}.lang
 
-%files -f %{name}-3.0.lang
+%files -f %{oname}-%{gimajor}.lang
 
 %doc AUTHORS NEWS
 %dir %{_datadir}/%{name}
