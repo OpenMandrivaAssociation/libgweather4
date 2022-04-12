@@ -92,7 +92,7 @@ This package contains the development files for %{name}.
 %{_libdir}/girepository-1.0/GWeather-%{gimajor}.typelib
 
 %files -n %{devname}
-%doc %{_datadir}/libgweather-4.0
+%doc %{_datadir}/doc/libgweather-4.0
 %{_libdir}/*.so
 %{_libdir}/pkgconfig/*.pc
 %{_includedir}/*
