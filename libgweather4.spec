@@ -73,17 +73,16 @@ This package contains the development files for %{name}.
 
 %install
 %meson_install
-%find_lang %{oname}-%{gimajor}
+%find_lang %{oname}-%{gimajor} --all-name
 
 %files -f %{oname}-%{gimajor}.lang
 
 %doc NEWS
 #dir #{_datadir}/%{name}
-#{_datadir}/%{name}/locations.dtd
-#{_datadir}/%{name}/Locations.xml
-#{_libdir}/%{name}/Locations.bin
-#{_datadir}/glib-2.0/schemas/org.gnome.GWeather.enums.xml
-#{_datadir}/glib-2.0/schemas/org.gnome.GWeather.gschema.xml
+%{_datadir}/libgweather-%{api}/Locations.xml
+l%{_datadir}/ibgweather-%{api}/locations.dtd
+%{_datadir}/glib-2.0/schemas/org.gnome.GWeather%{api}.enums.xml
+%{_datadir}/glib-2.0/schemas/org.gnome.GWeather%{api}.gschema.xml
 #{_datadir}/glade/catalogs/libgweather.xml
 
 %files -n %{libname}
@@ -93,10 +92,10 @@ This package contains the development files for %{name}.
 %{_libdir}/girepository-1.0/GWeather-%{gimajor}.typelib
 
 %files -n %{devname}
+%{doc} %{_datadir}/libgweather-4.0
 %{_libdir}/*.so
 %{_libdir}/pkgconfig/*.pc
 %{_includedir}/*
-#{_datadir}/gtk-doc/html/%{name}/*
 %{_datadir}/gir-1.0/GWeather-%{gimajor}.gir
-#{_datadir}/vala/vapi/gweather-%{gimajor}.vapi
-#{_datadir}/vala/vapi/gweather-%{gimajor}.deps
+%{_datadir}/vala/vapi/gweather%{api}.deps
+%{_datadir}/vala/vapi/gweather%{api}.vapi
