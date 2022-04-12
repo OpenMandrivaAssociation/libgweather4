@@ -100,4 +100,4 @@ cat %{name}-locations.lang >> %{name}-%{gimajor}.lang
 %{_datadir}/gtk-doc/html/%{name}/*
 %{_datadir}/gir-1.0/GWeather-%{gimajor}.gir
 %{_datadir}/vala/vapi/gweather-%{gimajor}.vapi
-%{_datadir}/vala/vapi/gweather-%{gimajor].deps
+%{_datadir}/vala/vapi/gweather-%{gimajor}.deps
