@@ -80,7 +80,7 @@ This package contains the development files for %{name}.
 %doc NEWS
 #dir #{_datadir}/%{name}
 %{_datadir}/libgweather-%{api}/Locations.xml
-l%{_datadir}/ibgweather-%{api}/locations.dtd
+%{_datadir}/ibgweather-%{api}/locations.dtd
 %{_datadir}/glib-2.0/schemas/org.gnome.GWeather%{api}.enums.xml
 %{_datadir}/glib-2.0/schemas/org.gnome.GWeather%{api}.gschema.xml
 #{_datadir}/glade/catalogs/libgweather.xml
