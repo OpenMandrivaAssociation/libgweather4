@@ -77,14 +77,14 @@ This package contains the development files for %{name}.
 
 %files -f %{oname}-%{gimajor}.lang
 
-%doc AUTHORS NEWS
-%dir %{_datadir}/%{name}
-%{_datadir}/%{name}/locations.dtd
-%{_datadir}/%{name}/Locations.xml
-%{_libdir}/%{name}/Locations.bin
-%{_datadir}/glib-2.0/schemas/org.gnome.GWeather.enums.xml
-%{_datadir}/glib-2.0/schemas/org.gnome.GWeather.gschema.xml
-%{_datadir}/glade/catalogs/libgweather.xml
+%doc NEWS
+#dir #{_datadir}/%{name}
+#{_datadir}/%{name}/locations.dtd
+#{_datadir}/%{name}/Locations.xml
+#{_libdir}/%{name}/Locations.bin
+#{_datadir}/glib-2.0/schemas/org.gnome.GWeather.enums.xml
+#{_datadir}/glib-2.0/schemas/org.gnome.GWeather.gschema.xml
+#{_datadir}/glade/catalogs/libgweather.xml
 
 %files -n %{libname}
 %{_libdir}/libgweather-%{api}.so.%{major}*
