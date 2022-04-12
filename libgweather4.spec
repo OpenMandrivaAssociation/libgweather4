@@ -74,8 +74,6 @@ This package contains the development files for %{name}.
 %install
 %meson_install
 %find_lang %{oname}-%{gimajor}
-%find_lang %{oname}-locations
-cat %{name}-locations.lang >> %{oname}-%{gimajor}.lang
 
 %files -f %{oname}-%{gimajor}.lang
 
