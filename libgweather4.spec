@@ -21,7 +21,7 @@ Source0:	ftp://ftp.gnome.org/pub/GNOME/sources/libgweather/%{url_ver}/%{oname}-%
 BuildRequires:	libxml2-utils
 BuildRequires:  pkgconfig(gi-docgen)
 BuildRequires:	pkgconfig(gconf-2.0) GConf2
-BuildRequires:	pkgconfig(geocode-glib-1.0)
+BuildRequires:	pkgconfig(geocode-glib-2.0)
 BuildRequires:  pkgconfig(gladeui-2.0)
 BuildRequires:	pkgconfig(glib-2.0)
 BuildRequires:	pkgconfig(gtk+-3.0)
