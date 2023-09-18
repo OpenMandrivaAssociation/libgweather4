@@ -11,12 +11,12 @@
 
 Summary:	GNOME Weather applet library
 Name:		libgweather4
-Version:	4.2.0
-Release:	3
+Version:	4.4.0
+Release:	1
 License:	GPLv2+
 Group:		System/Libraries
-Url:		http://www.gnome.org
-Source0:	ftp://ftp.gnome.org/pub/GNOME/sources/libgweather/%{url_ver}/%{oname}-%{version}.tar.xz
+Url:		https://www.gnome.org
+Source0:	https://ftp.gnome.org/pub/GNOME/sources/libgweather/%{url_ver}/%{oname}-%{version}.tar.xz
 
 BuildRequires:	libxml2-utils
 BuildRequires:  pkgconfig(gi-docgen)
