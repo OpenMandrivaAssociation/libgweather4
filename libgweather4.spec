@@ -82,9 +82,9 @@ This package contains the development files for %{name}.
 %files -f %{oname}-%{gimajor}.lang
 
 %doc NEWS
-%{_libdir}/libgweather-%{api}/Locations.bin
-%{_datadir}/libgweather-%{api}/Locations.xml
-%{_datadir}/libgweather-%{api}/locations.dtd
+#{_libdir}/libgweather-%{api}/Locations.bin
+#{_datadir}/libgweather-%{api}/Locations.xml
+#{_datadir}/libgweather-%{api}/locations.dtd
 %{_datadir}/glib-2.0/schemas/org.gnome.GWeather%{api}.enums.xml
 %{_datadir}/glib-2.0/schemas/org.gnome.GWeather%{api}.gschema.xml
 #{_datadir}/glade/catalogs/libgweather.xml
