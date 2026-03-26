@@ -35,6 +35,10 @@ BuildRequires:  pkgconfig(vapigen)
 BuildRequires:  python3dist(pygobject)
 #BuildRequires:  python3dist(pylint)
 BuildRequires:  gtk-doc
+BuildRequires:  pkgconfig(gweather-locations)
+Requires:       gweather-locations
+Requires:	%{libname} = %{version}-%{release}
+Requires:	%{girname} = %{version}-%{release}
 
 %description
 This is a library to provide Weather data to the GNOME panel applet.
